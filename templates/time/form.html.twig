@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Time form{% endblock %}
+
+{% block body %}
+    {{ form(form) }}
+    {% for error in errors|default([]) %}
+        <li>{{ error.message }}</li>
+    {% endfor %}
+{% endblock %}

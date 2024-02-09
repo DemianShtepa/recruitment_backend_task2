@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Time info{% endblock %}
+
+{% block body %}
+    The time zone {{ timeInfo.getTimezone() }} has {{ timeInfo.getOffset() }} minutes offset to UTC on the given day at noon.<br />
+    February in this year is {{ timeInfo.getDaysInFebruary() }} days long.<br />
+    The specified month {{ timeInfo.getMonthName() }} is {{ timeInfo.getDaysInMonth() }} days long.
+{% endblock %}

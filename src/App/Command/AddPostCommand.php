@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Command;
 
 use Domain\Post\PostManager;
@@ -7,7 +9,7 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class AddPostCommand extends Command
+final class AddPostCommand extends Command
 {
     protected static $defaultName = 'app:add-post';
     protected static $defaultDescription = 'Run app:add-post';
